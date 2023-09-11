@@ -1,0 +1,383 @@
+{
+    "name": "InputMaster",
+    "maps": [
+        {
+            "name": "Car",
+            "id": "e6b13944-03b9-43ef-a588-00122f627107",
+            "actions": [
+                {
+                    "name": "Left Right",
+                    "type": "Value",
+                    "id": "741a25a7-019a-4af6-aefa-e4d1df146aa3",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Brake Peddle Brake",
+                    "type": "Value",
+                    "id": "fb79779d-75e5-4bac-9da2-2398ac3d4015",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Brake Peddle Gas",
+                    "type": "Value",
+                    "id": "a6b4c8ab-3dff-4af3-9984-45bd7d333839",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Gas",
+                    "type": "Value",
+                    "id": "3600f2cd-c576-44c8-a164-b4f051e7d5a8",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Button Triangle",
+                    "type": "Button",
+                    "id": "cf75c50c-bdc5-4620-97a4-71c91f719f6c",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Button Square",
+                    "type": "Button",
+                    "id": "e564108b-1642-496d-83c8-4bc6a6ed2e45",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Button Circle",
+                    "type": "Button",
+                    "id": "d4996148-97e1-44d6-a14b-23b408eea45f",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Button X",
+                    "type": "Button",
+                    "id": "f0ce6c82-3d6f-435c-8400-e8738261a0c7",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Shift Gear",
+                    "type": "Button",
+                    "id": "ca9be867-dcec-4353-a1e8-bdf7780d8d33",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Tilt Test 0",
+                    "type": "Button",
+                    "id": "e136bece-5155-4974-a213-162c5ce5c430",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Tilt Test 8",
+                    "type": "Button",
+                    "id": "fa13911b-15b8-4bb0-a66b-35070e05a92f",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "81657780-3c8b-4d40-ae56-9680ccd71b43",
+                    "path": "<Joystick>/stick/x",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "T150 Controller",
+                    "action": "Left Right",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "keyboard",
+                    "id": "32d40dd0-6e23-4f45-bd1b-b93a6656c225",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Left Right",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "fd884bfe-f593-4a0d-b0e5-6b81d2b10453",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Left Right",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "c8fe7631-fef9-4c32-88de-30259f8c69f7",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Left Right",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "33d3c7f0-839e-4cd6-a0ed-7e8ae9ea081a",
+                    "path": "<Joystick>/stick/up",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "T150 Controller",
+                    "action": "Brake Peddle Brake",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "keyboard",
+                    "id": "27b585a5-063c-4aad-acf7-5a928ca2ceb1",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Brake Peddle Brake",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "6ff130b6-c9e2-4d19-9184-f8fd78dba85d",
+                    "path": "<Keyboard>/s",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "T150 Controller",
+                    "action": "Brake Peddle Brake",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "375f915e-f143-4eec-9de9-4956c7f49d0f",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "T150 Controller",
+                    "action": "Brake Peddle Brake",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "6fad0af6-ec4d-4df8-9671-d9a46d843a7f",
+                    "path": "<Joystick>/stick/down",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "T150 Controller",
+                    "action": "Brake Peddle Gas",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d342e519-dad2-4018-9898-122613b2c6ca",
+                    "path": "<HID::44F B677>/rz",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "T150 Controller",
+                    "action": "Gas",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "3513506e-af8a-422c-bfa2-0122e3aa6623",
+                    "path": "<HID::44F B677>/button3",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Button Triangle",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "7315c919-9ac9-49c2-bd48-f9fbcf83ec85",
+                    "path": "<Keyboard>/r",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "T150 Controller",
+                    "action": "Button Triangle",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d85b8fcb-c7bf-44bc-bf40-a041cb7837b2",
+                    "path": "<HID::44F B677>/button4",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "T150 Controller",
+                    "action": "Button Square",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "4d208752-640c-4eca-a7c0-cdd963a51197",
+                    "path": "<Keyboard>/t",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "T150 Controller",
+                    "action": "Button Square",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "914891bc-9904-4cfd-9f3c-2a88089ca43a",
+                    "path": "<HID::44F B677>/button5",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "T150 Controller",
+                    "action": "Button Circle",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "badc30db-6526-4ce7-82f1-9880a74b9dc0",
+                    "path": "<HID::44F B677>/button6",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "T150 Controller",
+                    "action": "Button X",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "eb54b9d4-b035-48a7-80b9-7cf71d7a8e38",
+                    "path": "<Keyboard>/comma",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "T150 Controller",
+                    "action": "Tilt Test 0",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "6be59386-08b4-4b82-8359-700f0dffe878",
+                    "path": "<Keyboard>/period",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "T150 Controller",
+                    "action": "Tilt Test 8",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "T150",
+                    "id": "efbe7efe-56cf-493a-ac2a-da15add0ac00",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Shift Gear",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "98ad0a7a-c45a-4791-bca8-6d71169d96e9",
+                    "path": "<Joystick>/trigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "T150 Controller",
+                    "action": "Shift Gear",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "a3698e81-934d-4bfa-ac24-1e81bff042be",
+                    "path": "<HID::44F B677>/button2",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "T150 Controller",
+                    "action": "Shift Gear",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "keyboard",
+                    "id": "2ee76c4f-61f5-4611-8d05-035a5eba3cb9",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Shift Gear",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "577c31cb-45d6-48fd-919a-9b6391bf3f01",
+                    "path": "<Keyboard>/leftArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "T150 Controller",
+                    "action": "Shift Gear",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "430be992-77f0-4504-9b93-f71c285cb7d7",
+                    "path": "<Keyboard>/rightArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "T150 Controller",
+                    "action": "Shift Gear",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "T150 Controller",
+            "bindingGroup": "T150 Controller",
+            "devices": [
+                {
+                    "devicePath": "<HID::44F B677>",
+                    "isOptional": false,
+                    "isOR": false
+                },
+                {
+                    "devicePath": "<Keyboard>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        }
+    ]
+}
