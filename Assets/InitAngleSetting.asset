@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d815c917c57d4c649bcd57fb3ef1b49d, type: 3}
   m_Name: InitAngleSetting
   m_EditorClassIdentifier: 
-  initAngle3: 11.5
-  initAngle4: 53.5
+  initAngle3: -0.5
+  initAngle4: 55.5
