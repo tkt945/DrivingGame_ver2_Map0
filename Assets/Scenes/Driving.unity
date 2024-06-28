@@ -840,7 +840,8 @@ MonoBehaviour:
   maxSpeed: 120
   motorForce: 500
   Gear: 0
-  centri_factor: 1.5
+  centri_factor: 0.45
+  tan_factor: 0.8
   maxTilt: 8
   minTilt: -8
 --- !u!54 &316490070 stripped

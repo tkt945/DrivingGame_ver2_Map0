@@ -9,7 +9,7 @@ using UnityEngine.InputSystem;
 public class CarController : MonoBehaviour
 {
     public InitAngle InitAngle;
-    public SerialPort sp = new SerialPort("COM3", 115200);
+    public SerialPort sp = new SerialPort("COM12", 115200);
 
     public GameObject CarSteering;  //方向盤
     public AudioSource audioSource1;  //引擎聲音1
@@ -50,7 +50,8 @@ public class CarController : MonoBehaviour
     double R, centri_acce, lastCentri_acce;
     double centri_acce_grad;
 
-    public float centri_factor=1;
+    public float centri_factor=0.8f;
+    public float tan_factor = 0.8f;
 
     double acce1; //前後的坐墊位移值
     double acce2; //左右的坐墊位移值
@@ -477,7 +478,7 @@ public class CarController : MonoBehaviour
             //計算1.坐墊前後位移值 2.坐墊左右位移值 3.傾斜角
             if (avg_tan_acce >= 0 && Gear == 1)
             {
-                acce1 = Math.Pow((avg_tan_acce / 0.1172f), (1 / 1.7406f));
+                acce1 = Math.Pow((avg_tan_acce / 0.1172f), (1 / 1.7406f))* tan_factor;
                 if (acce1 > 9.64)
                 {
                     acce1 = 9.64;
@@ -494,7 +495,7 @@ public class CarController : MonoBehaviour
 
             if (avg_tan_acce < 0 && Gear == 1)
             {
-                acce1 = - Math.Pow((-1 * avg_tan_acce / 0.1148f), (1 / 1.8216f));
+                acce1 = - Math.Pow((-1 * avg_tan_acce / 0.1148f), (1 / 1.8216f))* tan_factor;
                 if (acce1 < -9.18)
                 {
                     acce1 = -9.18;
@@ -511,7 +512,7 @@ public class CarController : MonoBehaviour
 
             if (avg_tan_acce >= 0 && Gear == 2)
             {
-                acce1 =- Math.Pow((avg_tan_acce / 0.1148f), (1 / 1.8216f));
+                acce1 =- Math.Pow((avg_tan_acce / 0.1148f), (1 / 1.8216f))* tan_factor;
                 if (acce1 < -9.18)
                 {
                     acce1 = -9.18;
@@ -528,7 +529,7 @@ public class CarController : MonoBehaviour
 
             if (avg_tan_acce < 0 && Gear == 2)
             {
-                acce1 = 1.8f * Math.Pow((-1 * avg_tan_acce / 0.1172f), (1 / 1.7406f));
+                acce1 = 1.8f * Math.Pow((-1 * avg_tan_acce / 0.1172f), (1 / 1.7406f))* tan_factor;
                 if (acce1 > 9.64)
                 {
                     acce1 = 9.64;
