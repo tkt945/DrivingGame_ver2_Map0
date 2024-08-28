@@ -9,7 +9,7 @@ using UnityEngine.InputSystem;
 public class TiltCalibration : MonoBehaviour
 {
     public InitAngle InitAngle;
-    public SerialPort sp = new SerialPort("COM18", 115200);
+    public SerialPort sp = new SerialPort("COM16", 115200);
     public Text FrontMotorAngle, BackMotorAngle;
 
     double acce1=0; //前後的坐墊位移值

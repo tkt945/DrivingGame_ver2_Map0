@@ -9,7 +9,7 @@ using UnityEngine.InputSystem;
 public class CarController : MonoBehaviour
 {
     public InitAngle InitAngle;
-    public SerialPort sp = new SerialPort("COM18", 115200);
+    public SerialPort sp = new SerialPort("COM16", 115200);
 
     public GameObject CarSteering;  //方向盤
     public AudioSource audioSource1;  //引擎聲音1
